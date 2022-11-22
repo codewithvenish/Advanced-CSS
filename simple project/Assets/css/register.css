@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+body{
+	background: whitesmoke;
+}
+
+.register-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: whitesmoke;
+	box-shadow: 0 15px 25px rgba(100, 100, 100, 0.7);
+	border-radius: 10px;
+}
+
+.register-box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color: orangered;
+	text-align: center;
+}
+
+.register-box .user-box input{
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.664);
+	font-weight:200;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid orangered;
+	outline: none;
+	background: transparent;
+}
+
+.register-box .user-box label{
+	position: relative;
+	left: 0;
+	top: -60px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: orangered;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.register-box .user-box input:focus~label,
+.register-box .user-box input:valid~label{
+	top: -85px;
+	left: 0;
+	color: orangered;
+	font-size: 12px;
+}
+
+#register{
+	padding: 7px 14px;
+	color: orangered;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	letter-spacing: 3px;
+	border: 1px solid orangered;
+	margin: auto;
+}
+
+#register:hover{
+	background: orangered;
+	color:#fff;
+	border-radius: 5px;
+	}
+
+.button-form{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+#login{
+	font-size: 14px;
+	text-decoration: none;
+	color: orangered;
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#login a{
+	margin: auto;
+	color: rgba(0, 0, 0, 0.664);
+	text-decoration: none;
+	font-weight:bold;
+	text-decoration: underline;
+	padding-right:20px;
+
+}
+#login > p{
+	padding-left:3px;
+}

@@ -1,0 +1,120 @@
+
+/* Google Fonts URL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+/* Common */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'poppins','sans-serif';
+ }
+ .container{
+    width:100vw;
+    height:100vh;
+    background-color: #000;
+    background:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(../images/coin.jpeg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;   
+ }
+
+ .container > header{
+display:flex;
+justify-content:space-around;
+align-items: center;
+width:100%;
+height:70px;
+}
+a{
+    text-decoration: none;
+}
+header > .logo > img{
+   width:60px;
+   height:60px;
+}
+header > ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    width:30%;
+}
+header > ul > li> a{
+    position:relative;
+   color:whitesmoke;
+   text-transform: capitalize;
+font-size:18px;
+font-weight:400;
+}
+header > ul>li>a:after{
+content:'';
+position:absolute;
+width:0;
+height:2px;
+bottom:0;
+left:0;
+background-color: orangered;
+transition: 0.6s;
+/* transform:scaleX(0); */
+}
+header > ul>li>a:hover:after{
+    width:100%;
+    /* transform:scaleX(1); */
+}
+.searchbox{
+    width:210px;
+    height:30px;
+    padding:0px 5px;
+    display:flex;
+    justify-content:space-between;
+    background-color:whitesmoke;
+    border-radius:3px;
+}
+.searchbox > input{
+    border:none;
+outline:none;
+color:black;
+font-weight:bold;
+background-color:whitesmoke;
+border-radius:3px;
+}
+.searchbox > i{
+    color:orangered;
+    align-self: center; 
+}
+.content{
+    width:100%;
+    position:absolute;
+    left:50%;
+    top:40%;
+    transform:translatex(-50%);
+    text-align:center;
+    color:#fff;
+}
+.content > a > .btn{
+    width:100px;
+    font-size:14px;
+    padding:8px 0;
+    text-align:center;
+    margin:20px 10px;
+    border-radius:5px;
+    font-weight:bold;
+    border:2px solid orangered;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.content > a > .btn:hover{
+    background: orangered;
+    color:black;
+}
+.content > h3{
+    font-size:35px;
+}
+
+
+
+
+
